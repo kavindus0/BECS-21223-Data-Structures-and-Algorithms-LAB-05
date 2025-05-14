@@ -15,7 +15,4 @@ public class Products {
         this.totalSales = north + east +south;
     }
 
-
-
-
 }
