@@ -121,7 +121,7 @@ public class List {
             System.out.println("Error: Attempt to retrieve entry at position " + p + " which is not in the list [0, " + (listSize() - 1) + "]");
 
         } else {
-            return listEntry[p].toString();
+            return listEntry[p].name;
         }
 
         return null;

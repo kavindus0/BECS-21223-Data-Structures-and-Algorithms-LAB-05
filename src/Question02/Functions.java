@@ -14,15 +14,27 @@ public class Functions {
         list.insertLast(productD);
     }
 
-    String bestProductOfRgion(){
+    String bestProductOfRgionNorth(){
         String productName = null;
         int initia = 0;
         for (int i = 0; i < 4; i++) {
             if (list.retrieveList(i).north > initia){
-                productName = list.retrieveList(i).name;
+                initia = list.retrieveList(i).north;
+                productName = list.retrieveListData(i);
             }
         }
-        System.out.println(productName);
+        System.out.println(" North " +productName);
+       return productName;
+    } String bestProductOfRgionSouth(){
+        String productName = null;
+        int initia = 0;
+        for (int i = 0; i < 4; i++) {
+            if (list.retrieveList(i).south > initia){
+                initia = list.retrieveList(i).north;
+                productName = list.retrieveListData(i);
+            }
+        }
+        System.out.println(" North " +productName);
        return productName;
     }
 
