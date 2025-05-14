@@ -23,7 +23,7 @@ public class Functions {
                 productName = list.retrieveListData(i);
             }
         }
-        System.out.println(" North " +productName);
+        System.out.println(" North \t" +productName+" - " + initia);
        return productName;
     } 
     
@@ -36,7 +36,7 @@ public class Functions {
                 productName = list.retrieveListData(i);
             }
         }
-        System.out.println(" South " +productName);
+        System.out.println(" South \t" +productName + " - " + initia);
        return productName;
     }
     String bestProductOfRgionEast(){
@@ -48,13 +48,21 @@ public class Functions {
                 productName = list.retrieveListData(i);
             }
         }
-        System.out.println(" East " +productName);
+        System.out.println(" East \t" +productName+" - " + initia);
        return productName;
     }
 
     String bestofQuarter(){
         String productName = null;
-        return productName;
+        int initia = 0;
+        for (int i = 0; i < 4; i++) {
+            if (list.retrieveList(i).totalSales > initia){
+                initia = list.retrieveList(i).totalSales;
+                productName = list.retrieveListData(i);
+            }
+        }
+        System.out.println(" \n\nTotal Best All Quarter Sale :\t" +productName+" - " + initia);
+       return productName;
     }
 
 }
