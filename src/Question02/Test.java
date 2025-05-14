@@ -8,6 +8,6 @@ public class Test {
         function.bestProductOfRgionNorth();
         function.bestProductOfRgionEast();
         function.bestProductOfRgionSouth();
-
+        function.bestofQuarter();
     }
 }

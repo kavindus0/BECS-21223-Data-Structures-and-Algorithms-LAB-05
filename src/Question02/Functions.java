@@ -52,5 +52,9 @@ public class Functions {
        return productName;
     }
 
+    String bestofQuarter(){
+        String productName = null;
+        return productName;
+    }
 
 }
