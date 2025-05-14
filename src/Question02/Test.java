@@ -5,7 +5,9 @@ public class Test {
 
         Functions function = new Functions();
         function.addData();
-        function.bestProductOfRgion();
+        function.bestProductOfRgionNorth();
+        function.bestProductOfRgionEast();
+        function.bestProductOfRgionSouth();
 
     }
 }

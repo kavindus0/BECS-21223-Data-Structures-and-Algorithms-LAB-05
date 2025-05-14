@@ -36,7 +36,7 @@ public class Functions {
                 productName = list.retrieveListData(i);
             }
         }
-        System.out.println(" North " +productName);
+        System.out.println(" South " +productName);
        return productName;
     }
     String bestProductOfRgionEast(){
@@ -48,7 +48,7 @@ public class Functions {
                 productName = list.retrieveListData(i);
             }
         }
-        System.out.println(" North " +productName);
+        System.out.println(" East " +productName);
        return productName;
     }
 
