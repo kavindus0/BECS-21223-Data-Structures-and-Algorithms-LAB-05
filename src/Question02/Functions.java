@@ -25,12 +25,26 @@ public class Functions {
         }
         System.out.println(" North " +productName);
        return productName;
-    } String bestProductOfRgionSouth(){
+    } 
+    
+    String bestProductOfRgionSouth(){
         String productName = null;
         int initia = 0;
         for (int i = 0; i < 4; i++) {
             if (list.retrieveList(i).south > initia){
-                initia = list.retrieveList(i).north;
+                initia = list.retrieveList(i).south;
+                productName = list.retrieveListData(i);
+            }
+        }
+        System.out.println(" North " +productName);
+       return productName;
+    }
+    String bestProductOfRgionEast(){
+        String productName = null;
+        int initia = 0;
+        for (int i = 0; i < 4; i++) {
+            if (list.retrieveList(i).east > initia){
+                initia = list.retrieveList(i).east;
                 productName = list.retrieveListData(i);
             }
         }
